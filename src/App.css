@@ -1,0 +1,32 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+li .point {
+  padding-left: 0.4rem;
+}
+
+.card {
+  background-color: #ececec;
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  color: black;
+  padding: 0.8rem;
+}
+
+.card--title-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__h3--capitalise {
+  text-transform: capitalize;
+}
