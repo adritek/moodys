@@ -1,32 +1,14 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-
-interface PokemonList {
-  count: number;
-  next: string;
-  previous?: any;
-  results: {
-    name: string;
-    url: string;
-  }[];
-}
-
-interface Pokemon {
-  id: number;
-  name: string;
-  height: number;
-  weight: number;
-  types?: any;
-  abilities?: any;
-  sprites?: any;
-}
+import { PokemonList, Pokemon } from './interfaces/file.interface';
+import { Card } from 'antd';
 
 export default function App() {
   const [pokemonList, setPokemonList] = useState<PokemonList | null>(null);
   const [pokemon, setPokemon] = useState<Pokemon | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
-  // const [error, setError] = useState<Error | null>(null);
 
+  const { Meta } = Card;
   useEffect(() => {
     async function getPokemonList() {
       try {
@@ -56,10 +38,6 @@ export default function App() {
     return <p>Loading...</p>;
   }
 
-  // if (error) {
-  //   return <p>Error: {error.message}</p>;
-  // }
-
   if (!pokemon) {
     return <p>Didn't catch 'em all</p>;
   }
@@ -67,36 +45,36 @@ export default function App() {
   return (
     <div>
       <h1>Pokemon Info</h1>
-      <div className="card">
-        <ul>
-          <li key={pokemon.id}>
-            <div className="card--title-center">
-              <h3 className="card__h3--capitalise">{pokemon.name}</h3>
-              <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-            </div>
-            <p>
-              <b>Height:</b> {pokemon.height}
-            </p>
-            <p>
-              <b>Weight:</b> {pokemon.weight}
-            </p>
-            <p>
-              <b>Pokemon type:</b>
-            </p>
+      {/* Basic card with a photo */}
+      <Card hoverable style={{ width: 240 }} cover={<img alt={pokemon.name} src={pokemon.sprites.front_default} />}>
+        <Meta className="card__h3--capitalise" title={pokemon.name} />
+        <p>
+          <b>Height:</b> {pokemon.height}
+        </p>
+        <p>
+          <b>Weight:</b> {pokemon.weight}
+        </p>
+        <p>
+          <b>Pokemon type:</b>
+          <ul>
             {pokemon.types.map((el) => (
               <li className="point" key={`${el.type.name}+${pokemon.id}`}>
                 {el.type.name}
               </li>
             ))}
-            <b>Pokemon abilities:</b>
+          </ul>
+        </p>
+        <p>
+          <b>Pokemon abilities:</b>
+          <ul>
             {pokemon.abilities.map((ab) => (
               <li className="point" key={`${ab.ability.name}+${pokemon.id}`}>
                 {ab.ability.name}
               </li>
             ))}
-          </li>
-        </ul>
-      </div>
+          </ul>
+        </p>
+      </Card>
     </div>
   );
 }

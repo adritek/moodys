@@ -9,7 +9,7 @@ ul {
   list-style-type: none;
 }
 
-li .point {
+li.point {
   padding-left: 0.4rem;
 }
 
