@@ -69,7 +69,7 @@ export default function App() {
           <ul>
             {pokemon.abilities.map((ab) => (
               <li className="point" key={`${ab.ability.name}+${pokemon.id}`}>
-                {ab.ability.name}
+                <label className="card__label--ability">{ab.ability.name}</label>
               </li>
             ))}
           </ul>
