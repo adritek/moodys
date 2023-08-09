@@ -16,4 +16,7 @@ export interface Pokemon {
   types?: any;
   abilities?: any;
   sprites?: any;
+  stats: {
+    base_stat: number;
+  }[]
 }
