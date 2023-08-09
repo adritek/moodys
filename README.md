@@ -43,5 +43,5 @@ Start the app
 
 ## Lessons Learned
 
-- Try Promise.all to neatly grab all asyc requests
+- Try Promise.all to neatly grab all async requests
 - More time to add a line chart (Antd charts) for combat stats
