@@ -1,27 +1,47 @@
-# React + TypeScript + Vite
+# Stats App with Antd
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+View a Pokemon's stats and vitals
 
-Currently, two official plugins are available:
+## Acknowledgements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [READMEO.SO](https://readme.so)
 
-## Expanding the ESLint configuration
+## Author
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [@adritek - github](https://www.github.com/adritek)
+- [@adrian-rogers LinkedIn](https://www.linkedin.com/in/adrian-rogers/)
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+This project uses Vite and React
+Clone the repo, then open a terminal in the root folder, and install App dependancies
+
+```bash
+  npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Run Locally
+
+Start the app
+
+```bash
+  npm dev start
+```
+
+## 🔗 Links
+
+[![github](https://img.shields.io/badge/github-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/adritek)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adrian-rogers/)
+
+## Highlights
+
+- Typescript
+- Separation of interfaces (neater code)
+- Antd component integration
+- Bem naming
+- Gitflow branching model
+
+## Lessons Learned
+
+- Try Promise.all to neatly grab all asyc requests
+- More time to add a line chart (Antd charts) for combat stats
