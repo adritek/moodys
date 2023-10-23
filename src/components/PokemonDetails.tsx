@@ -1,4 +1,4 @@
-import { Card } from 'antd';
+import { Card } from 'antd'
 
 export function PokemonDetails() {
   return (
@@ -10,5 +10,5 @@ export function PokemonDetails() {
         <p>Card content</p>
       </Card>
     </div>
-  );
+  )
 }
