@@ -1,10 +1,6 @@
 # Stats App with Antd
 
-View a Pokemon's stats and vitals
-
-## Acknowledgements
-
-- [READMEO.SO](https://readme.so)
+View a Pokemon's stats and vitals - [github page](https://adritek.github.io/moodys/)
 
 ## Author
 
@@ -45,3 +41,7 @@ Start the app
 
 - Try Promise.all to neatly grab all async requests
 - More time to add a line chart (Antd charts) for combat stats
+
+## Acknowledgements
+
+- [READMEO.SO](https://readme.so)
