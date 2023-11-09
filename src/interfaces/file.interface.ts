@@ -1,4 +1,4 @@
-export interface AxiosList {
+export interface PokemonNames {
   name: string;
   url: string;
 }
@@ -6,7 +6,7 @@ export interface AxiosList {
 export interface PokemonList {
   count: number;
   next: string;
-  previous?: AxiosList | null;
+  previous?: PokemonNames | null;
   results: {
     name: string;
     url: string;
