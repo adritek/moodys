@@ -13,8 +13,6 @@ export const getPokemon = async () => {
 };
 
 export const getPokemonDetails = async (id: number) => {
-  console.log('id passed to gpd: ', id);
-
   const response = await pokemonApi.get(pokemonDetailsUrlEndpoint + `${id}`);
   return response.data;
 };

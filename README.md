@@ -2,11 +2,6 @@
 
 View a Pokemon's stats and vitals - [github page](https://adritek.github.io/moodys/)
 
-## Author
-
-- [@adritek - github](https://www.github.com/adritek)
-- [@adrian-rogers LinkedIn](https://www.linkedin.com/in/adrian-rogers/)
-
 ## Installation
 
 This project uses Vite and React
@@ -24,15 +19,10 @@ Start the app
   npm dev start
 ```
 
-## 🔗 Links
-
-[![github](https://img.shields.io/badge/github-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/adritek)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adrian-rogers/)
-
 ## Highlights
 
-- Typescript
-- Separation of interfaces (neater code)
+- Typescript, Axios, and SWR
+- Separation of interfaces and API requests
 - Antd component integration
 - Bem naming
 - Gitflow branching model
@@ -41,6 +31,11 @@ Start the app
 
 - Try Promise.all to neatly grab all async requests
 - More time to add a line chart (Antd charts) for combat stats
+
+## 🔗 Author
+
+[![github](https://img.shields.io/badge/github-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/adritek)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adrian-rogers/)
 
 ## Acknowledgements
 
