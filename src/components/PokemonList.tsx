@@ -58,7 +58,7 @@ function PokemonListItem({ pokemon }: { pokemon: PokemonNames }) {
 }
 
 export default function PokemonList() {
-  const { error, data } = useSWR(cacheKey, getPokemon, {
+  const { isLoading, error, data } = useSWR(cacheKey, getPokemon, {
     onErrorRetry: (error) => {
       if (error.response.status === 404) return error.message;
     },
@@ -74,8 +74,7 @@ export default function PokemonList() {
       </div>
     );
   }
-
-  if (!data) {
+  if (isLoading) {
     return <p>Loading... {'(ノ^◡^)ノ︵◓'}</p>;
   }
 
