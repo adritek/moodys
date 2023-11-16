@@ -1,4 +1,4 @@
-export interface PokemonNames {
+export interface UrlPokemonNames {
   name: string;
   url: string;
 }
@@ -6,14 +6,14 @@ export interface PokemonNames {
 export interface PokemonList {
   count: number;
   next: string;
-  previous?: PokemonNames | null;
+  previous?: UrlPokemonNames | null;
   results: {
     name: string;
     url: string;
   }[];
 }
 
-export interface PokemonDetails {
+export interface UrlPokemonDetails {
   id: number;
   name: string;
   height: number;

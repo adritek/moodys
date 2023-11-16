@@ -4,7 +4,7 @@ export const pokemonApi = axios.create({
   baseURL: 'https://pokeapi.co/api/v2',
 });
 
-export const pokemonUrlEndpoint = '/pokemon/?limit=6';
+export const pokemonUrlEndpoint = '/pokemon/?limit=12';
 export const pokemonDetailsUrlEndpoint = '/pokemon/';
 
 export const getPokemon = async () => {

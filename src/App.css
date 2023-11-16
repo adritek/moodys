@@ -4,31 +4,87 @@
   padding: 2rem;
 }
 
-#root {
+/* #root {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-}
+} */
 
 ul {
   list-style-type: none;
-}
-
-.card {
-  background-color: #ececec;
-  border: 1px solid cornflowerblue;
-  border-radius: 5px;
-  color: black;
-  padding: 0.8rem;
-}
-
-.card--title-center {
+  /* text-align: center; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.card__h3--capitalise {
-  text-transform: capitalize;
+ul li {
+  /* display: inline-block; */
+  text-align: center;
+}
+
+.tile {
+  outline: 1px solid black;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.gray {
+  background-color: lightgray;
+}
+.orange {
+  background-color: lightsalmon;
+}
+.blue {
+  background-color: lightblue;
+}
+
+.skyblue {
+  background-color: lightcyan;
+}
+.red {
+  background-color: lightcoral;
+}
+.purple {
+  background-color: plum;
+}
+.yellow {
+  background-color: lightyellow;
+}
+.sandybrown {
+  background-color: bisque;
+}
+.brown {
+  background-color: burlywood;
+}
+.pink {
+  background-color: lightpink;
+}
+.lightblue {
+  background-color: lightslategray;
+}
+.darkgreen {
+  background-color: greenyellow;
+}
+.indigo {
+  background-color: powderblue;
+}
+.slategray {
+  background-color: lightgray;
+}
+.royalblue {
+  background-color: lightblue;
+}
+.darkslategray {
+  background-color: lightsteelblue;
+}
+.violet {
+  background-color: lightgoldenrodyellow;
 }
