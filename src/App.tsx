@@ -1,4 +1,5 @@
 import './App.css';
+import { Link } from 'react-router-dom';
 import useSWR from 'swr';
 import {
   pokemonUrlEndpoint,
@@ -12,7 +13,10 @@ import {
   // UrlPokemonDetails,
 } from './interfaces/file.interface';
 
+// import { getDetails } from './loaders';
+
 import typeColors from './components/utilities/typeColours';
+// import Details from './pages/Details';
 
 function extractIdFromUrl(url: string): number {
   const segments = url.split('/').filter((segment) => segment !== '');
@@ -36,12 +40,14 @@ function PokemonDetailsTile({ url }: { url: string }) {
   const backgroundColor = typeColors[type] || 'grey';
 
   return (
-    <div className={`tile ${backgroundColor}`}>
-      <p>{data.id}</p>
-      <img src={data.sprites.front_default} alt={data.name} />
-      <p>{data.name}</p>
-      <p>{data.types[0].type.name}</p>
-    </div>
+    <Link to='Details'>
+      <div className={`tile ${backgroundColor}`}>
+        <p>{data.id}</p>
+        <img src={data.sprites.front_default} alt={data.name} />
+        <p>{data.name}</p>
+        <p className='label'>{data.types[0].type.name}</p>
+      </div>
+    </Link>
   );
 }
 
